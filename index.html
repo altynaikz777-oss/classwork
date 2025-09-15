@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <style>
+   body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+   } 
+   .container{
+    background-color: hsl(216, 50%, 16%);
+    width:450px;
+    border-radius: 10px;
+    height:700px;
+    position:relative;
+    margin-top: 50px;
+   }
+   .equilibrium{
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left:50px;
+   }
+   .diemond{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+   }
+   .eth{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(178, 100%, 50%);
+   }
+   .content{
+    color: white;
+    position:absolute;
+    bottom:110px;
+    left:50px;
+    width:400px;
+   }
+   .clock{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right:20px;
+    color:hsl(215, 51%, 70%);
+    font-size: 15px;
+   }
+   .blue{
+    color:hsl(215, 51%, 70%);
+    font-size:15px;
+    font-family:  sans-serif;
+   }
+   .blue1{
+   color:hsl(215, 51%, 70%);
+    font-size:15px;
+    font-family:  sans-serif;
+    margin-top: 30px;
+   }
+   .avatar{
+    width:30px;
+    height:30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right:10px;
+    margin-top: 30px;
+   }
+   .botton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    
+   }
+   .white{
+    color:white;
+   }
+   .line{
+    border-color:hsl(215, 51%, 70%);
+    width:370px;
+    margin-left: 5px;
+   }
+   .equilibrium.wrapper{
+    position:absolute;
+    top:20px;
+    left:50px;
+    width:350px;
+    height:350px;
+   }
+   .overlay{
+   position:absolute;
+   width:350px;
+   height:350px;
+   top:20px;
+   left:50px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   border-radius:10px;
+   background-color: hsla(178, 100%, 50%, 0.5);
+   cursor:pointer;
+   opacity:0;
+   transition: opacity 0,3s;
+   }
+   .equilibrium-wrapper:hover .overlay{
+    opacity:1;
+   }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="equilibrium-wrapper">
+  <img src="images/image-equilibrium.jpg" alt="Equilibrium" class="equilibrium">
+  <div class="overlay">
+    <img src="icon-view.svg" alt="View Icon">
+  </div>
+  </div>
+  <div class="content">
+  <h3>Equilibrium #3429<h3>
+
+  <p class="blue">Our Equilibrium collection promotes <br>balance and calm.</p>
+<div class="diemond">
+  <div class="eth">
+  <img src="icon-ethereum.svg" alt="Ethereum" class="ethereum">
+  <h4>0.041 ETH</h4>
+  </div>
+  <div class="clock">
+    <img src="icon-clock.svg" alt="Clock">
+<p>  3 days left</p>
+</div>
+  </div>
+  <hr class="line">
+  <div class="botton">
+    <img src="image-avatar.png" alt="Avatar of Jules Wyvern" class="avatar">
+    <span class="blue1">
+  Creation of <span class="white">Jules Wyvern</span></span>
+  </div>
+  </div>
+</body>
+</html>
